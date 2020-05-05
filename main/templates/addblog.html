@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>addblog</title>
+</head>
+<body>
+<form method="post">
+    {% csrf_token %}
+    Upload Image<input type="file" name="image" ><br>
+    <input type="text" placeholder="Enter the blog title" name="title"><br>
+    <textarea type="text" placeholder="Enter the blog body" name="body"></textarea><br>
+    <button type="submit">Add</button>
+</form>
+</body>
+</html>
